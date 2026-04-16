@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+main{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+h1{
+    background-color: gold;
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+}
+h3 {
+    margin: 0px;
+}
+h2 {
+    margin: 0px;
+}
+.navbar ul{
+    list-style: none;
+    background-color: rgb(169, 11, 42);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: aqua;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(208, 16, 55);
+}
+.navbar li{
+    float: left;
+}
+h2{
+    text-align: center;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: darkgoldenrod;
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}
+main{
+    animation: colorchange 60s linear 1s infinite; -webkit-animation: colorchange 60s linear 0s infinite;
+    height: 70vh;
+    margin: 0px;
+}
+
+@keyframes colorchange
+{
+    0% {background: ivory;color: lightgrey;}
+    33% {background: tan;color: lightgoldenrodyellow;}
+    66% {background: lemonchiffon;color: beige;}
+    100% {background: honeydew;color: ghostwhite;}
+}
+@-webkit-keyframes colorchange
+{
+     0% {background: ivory;color: lightgrey;}
+    33% {background: tan;color: lightgoldenrodyellow;}
+    66% {background: lemonchiffon;color: beige;}
+    100% {background: honeydew;color: ghostwhite;}
+}
+section, article, aside {
+    animation: colorchange 60s infinite;
+    height: 70vh;
+}
+#content {
+    color: black;
+}
